@@ -10,7 +10,7 @@ export function AIToolsNavigation() {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;  
       return savedTheme === 'dark' || (!savedTheme && prefersDark);
     }
     return false;
@@ -69,7 +69,7 @@ export function AIToolsNavigation() {
       <div className="max-w-6xl mx-auto pt-20 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-neutral-400 tracking-tight mb-3">
-            Liteai.pro
+            Liteai.top
           </h1>
           <button
             onClick={() => setShowExplanations(!showExplanations)}
